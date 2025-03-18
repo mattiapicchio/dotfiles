@@ -1,0 +1,39 @@
+theme = "Monokai Pro Octagon"
+#theme = "FishTank"
+#theme = "jubi"
+#theme = "Violet Dark"
+# theme = UltraViolent
+font-size = 13
+font-family = Monospace Neon
+mouse-hide-while-typing = true
+window-decoration = true
+background-blur-radius = 40
+background-opacity = 0.99
+
+#macos
+macos-titlebar-style = tabs
+macos-titlebar-proxy-icon = hidden
+macos-option-as-alt = false
+# macos-non-native-fullscreen = true
+
+# keymaps
+# keybind = global:cmd+`=toggle_quick_terminal
+keybind = global:f1=toggle_quick_terminal
+# keybind = shift+ctrl+left_bracket=previous_tab
+# keybind = shift+ctrl+right_bracket=next_tab
+# keybind = shift+ctrl+,=move_tab:-1
+# keybind = shift+ctrl+.=move_tab:+1
+
+## quick terminal
+# quick-terminal-position = center
+quick-terminal-screen =  mouse
+quick-terminal-autohide = false
+quick-terminal-animation-duration = 0
+
+# ghostty +list-fonts
+# font-family = Symbols Nerd Font Mono
+# font-family = Berkeley Mono
+# font-family-italic = "Maple Mono"
+# font-family-bold-italic = "Maple Mono"
+# font-size = 14
+# window-title-font-family = "Maple Mono"
