@@ -125,7 +125,7 @@ keymap = [
 
 	# Goto
 	{ on = [ "g", "h" ],       run = "cd ~",             desc = "Go home" },
-	{ on = [ "g", "c" ],       run = "cd ~/.config",     desc = "Goto ~/.config" },
+	{ on = [ "g", "c" ],       run = "cd ~/.dotfiles",     desc = "Go to config dotfiles" },
 	{ on = [ "g", "d" ],       run = "cd ~/Downloads",   desc = "Goto ~/Downloads" },
 	{ on = [ "g", "r" ],       run = "cd ~/rep",   desc = "Goto ~/rep" },
 	{ on = [ "g", "x" ],       run = "cd ~/Documents/cheatsheets",   desc = "Goto cheatsheets" }, 
