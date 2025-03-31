@@ -59,15 +59,17 @@ alias bindlist="ifconfig | grep -A 2 utun"
 # btop - htop
 # ncdu
 # tf*ck : tf
+# https://github.com/yt-dlp/yt-dlp
+# hyperfine https://github.com/sharkdp/hyperfine
 
 # Deepseek
 # Reasoning model
-alias dsr="ollama run deepseek-r1:32b" 
+alias dsr="ollama run deepseek-r1:14b" 
 # Mixture of Experts
 alias ds="ollama run deepseek-v2:16b" 
 # Coder
 # https://ollama.com/library/deepseek-coder:33b
-alias dsc="ollama run deepseek-coder:33b" 
+alias dsc="ollama run deepseek-coder-v2:16b" 
 
 
 # GHOSTTY
@@ -101,6 +103,7 @@ alias nm="nmap -sC -sV -oN nmap"
 
 # Tmux
 alias tmux_reload="tmux source-file ~/.config/tmux/tmux.conf"
+alias tmux_restart="tmux kill-server && tmux || tmux"
 alias tmn="tmux new -s"
 
 # FVM
