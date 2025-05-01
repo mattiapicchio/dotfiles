@@ -191,4 +191,4 @@ neofetch
 
 PATH=~/.console-ninja/.bin:$PATH
 
- brew services restart sketchybar
+brew services restart sketchybar

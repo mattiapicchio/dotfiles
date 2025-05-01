@@ -115,9 +115,9 @@ preset = 'qwerty'
 [gaps]
 inner.horizontal = 12
 inner.vertical =   12
-outer.left =       12
-outer.bottom =     12
-outer.top =        12
+outer.left =       6
+outer.bottom =     6
+outer.top =        6
 outer.right =      70
 
 # 'main' binding mode declaration
@@ -186,8 +186,8 @@ cmd-4 = 'workspace 4'
 cmd-5 = 'workspace 5'
 cmd-6 = 'workspace 6'
 cmd-7 = 'workspace 7'
-cmd-8 = 'workspace A'
-cmd-9 = 'workspace B'
+cmd-8 = 'workspace 8'
+cmd-9 = 'workspace 9'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 cmd-alt-1 = 'move-node-to-workspace 1 --focus-follows-window'
@@ -197,8 +197,8 @@ cmd-alt-4 = 'move-node-to-workspace 4 --focus-follows-window'
 cmd-alt-5 = 'move-node-to-workspace 5 --focus-follows-window'
 cmd-alt-6 = 'move-node-to-workspace 6 --focus-follows-window'
 cmd-alt-7 = 'move-node-to-workspace 7 --focus-follows-window'
-cmd-alt-8 = 'move-node-to-workspace A --focus-follows-window'
-cmd-alt-9 = 'move-node-to-workspace B --focus-follows-window'
+cmd-alt-8 = 'move-node-to-workspace 8 --focus-follows-window'
+cmd-alt-9 = 'move-node-to-workspace 9 --focus-follows-window'
 
 cmd-alt-right = 'workspace next'
 cmd-alt-left = 'workspace prev'
@@ -211,10 +211,10 @@ alt-shift-s = 'mode service'
 alt-shift-a = 'mode apps'
 
 alt-t = 'exec-and-forget open -a /Applications/Ghostty.app -n'
-alt-a = 'exec-and-forget open -a /Applications/Arc.app'
+# alt-a = 'exec-and-forget open -a /Applications/Arc.app'
 alt-o = 'exec-and-forget open -a /Applications/Obsidian.app'
-alt-c = 'exec-and-forget open -a /Applications/Chrome.app'
-alt-v = 'exec-and-forget open -a "/Applications/Visual Studio Code - Insiders.app"'
+alt-c = 'exec-and-forget open -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222' # &
+alt-v = 'exec-and-forget open -n -a "/Applications/Visual Studio Code - Insiders.app" --args -n'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes

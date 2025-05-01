@@ -31,7 +31,7 @@ export PATH="$PATH:$HOME/fvm/default/bin"
 # PUB
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 
-# Android Studiwo
+# Android Studio
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
 

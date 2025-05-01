@@ -8,7 +8,8 @@ sketchybar --add       item            github.bell right                  \
                                        label=$LOADING                     \
                                        label.highlight_color=$BLUE        \
                                        background.padding_left=10         \
-                                       popup.align=right                  \
+                                       popup.align=left                  \
+                                       popup.offset=10                  \
                                        script="$PLUGIN_DIR/github.sh"     \
                                        click_script="$POPUP_CLICK_SCRIPT" \
            --subscribe github.bell     mouse.entered                      \
