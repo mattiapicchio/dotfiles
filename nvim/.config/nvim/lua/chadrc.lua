@@ -6,12 +6,17 @@
 local M = {}
 
 M.base46 = {
-	theme = "tomorrow_night",
-
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+	theme = "eldritch",
+	transparency = true,
+	-- theme = "bearded-arc",
 }
 
+M.nvdash = { load_on_startup = true }
+M.ui = {
+      tabufline = {
+         lazyload = false
+     }
+}
+M.plugins = "custom.plugins"
+-- M.plugins = require("custom.plugins") 
 return M
