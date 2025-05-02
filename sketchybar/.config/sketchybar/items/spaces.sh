@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+export CONFIG_DIR="$HOME/.config/sketchybar"
+
 sketchybar --add event aerospace_workspace_change
 RED=0xffed8796
 for sid in $(aerospace list-workspaces --all); do
@@ -11,7 +13,8 @@ for sid in $(aerospace list-workspaces --all); do
                               icon.padding_right=16                         \
                               label.padding_right=33                        \
                               icon.highlight_color=$RED   \
-                              icon.color=0xFF6CF401                  \
+                              icon.color=0xFF6CF401        \
+                              icon.font="Hack Nerd Font:Regular:16.0"        \
                               background.color=0xFFF7C927 \
                               background.corner_radius=5 \
                               background.height=30 \
