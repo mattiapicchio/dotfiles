@@ -64,4 +64,4 @@ stats
 yt-dlp
 hyperfine
 
-# https://switowski.com/blog/favorite-cli-tools/
+# https://switowski.com/blog/favorite-cli-tools/ø
