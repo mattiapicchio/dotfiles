@@ -23,3 +23,7 @@ Simulate (dry run): `stow -n packagename`
 Verbose output: `stow -v packagename`
 
 Use `stow -adopt` to adopt existing files into your stow package
+
+test
+
+
