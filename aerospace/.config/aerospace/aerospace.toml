@@ -65,6 +65,10 @@ if.app-name-regex-substring = 'Bitwarden'
 run = 'layout floating'
 
 [[on-window-detected]]
+if.app-name-regex-substring = 'Azure VPN Client'
+run = 'layout floating'
+
+[[on-window-detected]]
 if.app-name-regex-substring = 'qBittorrent'
 run = 'layout floating'
 
@@ -108,8 +112,10 @@ preset = 'qwerty'
 
 # Define my fancy unicorn key notation
 # [key-mapping.key-notation-to-key-code]
-# unicorn = 'ä'
-
+# sweo = 'ö'
+# swea = 'ä'
+# sweo = 'U+00F6'
+# swea = 'U+00E4'
 
 
 [gaps]
@@ -125,7 +131,7 @@ outer.right =      70
 # 'main' binding mode must be always presented
 # Fallback value (if you omit the key): mode.main.binding = {}
 [mode.main.binding]
-
+ cmd-h = [] # Disable "hide application"
 # All possible keys:
 # - Letters.        a, b, c, ..., z
 # - Numbers.        0, 1, 2, ..., 9
@@ -227,3 +233,21 @@ backspace = ['close-all-windows-but-current', 'mode main']
 [mode.apps.binding]
 alt-w = ['exec-and-forget open -a /Applications/Ghostty.app', 'mode main']
 esc = ['reload-config', 'mode main']
+
+
+# aerospace workspace "$(aerospace list-workspaces --monitor mouse --visible)" && aerospace workspace next
+# aerospace workspace "$(aerospace list-workspaces --monitor mouse --visible)" && aerospace workspace prev
+
+# alt-t = '''exec-and-forget osascript -e '
+# tell application "Ghostty"
+#     do script
+#     activate
+# end tell'
+# '''
+
+# ctrl-g = '''exec-and-forget osascript -e '
+# tell application "Safari"
+#     make new document at end of documents
+#     activate
+# end tell'
+# '''
