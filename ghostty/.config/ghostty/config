@@ -1,8 +1,9 @@
 #theme = "Monokai Pro Octagon"
 # theme = "FishTank"
 # theme = "jubi"
-theme = "Violet Dark"
+#theme = "Violet Dark"
 #theme = UltraViolent
+theme = "blulocoDark"
 font-size = 15
 font-family = JetBrainsMono Nerd Font
 # font-family = Monospace Neon
