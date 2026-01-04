@@ -165,6 +165,204 @@ keybinds clear-defaults=true {
                 quick_jump true
             }
         }
+        bind "Alt f" {
+            LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij_forgot.wasm" {
+                floating true
+                "LOAD_ZELLIJ_BINDINGS" "false"
+                // aerospace: layout
+                "aerospace: fullscreen" "alt-shift-f"
+                "aerospace: floating" "alt-ctrl-f"
+                "aerospace: tiles h/v" "alt-period"
+                "aerospace: accordion h/v" "alt-comma"
+                // aerospace: focus
+                "aerospace: focus left" "alt-h"
+                "aerospace: focus down" "alt-j"
+                "aerospace: focus up" "alt-k"
+                "aerospace: focus right" "alt-l"
+                // aerospace: move window
+                "aerospace: move left" "alt-shift-h"
+                "aerospace: move down" "alt-shift-j"
+                "aerospace: move up" "alt-shift-k"
+                "aerospace: move right" "alt-shift-l"
+                // aerospace: workspaces
+                "aerospace: workspace 1-7" "cmd-1..7"
+                "aerospace: workspace A/B" "cmd-8/9"
+                "aerospace: move to ws 1-7" "cmd-alt-1..7"
+                "aerospace: move to ws A/B" "cmd-alt-8/9"
+                "aerospace: ws next/prev" "cmd-alt-right/left"
+                "aerospace: ws back-forth" "alt-q"
+                "aerospace: ws to monitor" "alt-shift-q"
+                // aerospace: join
+                "aerospace: join left" "alt-ctrl-shift-h"
+                "aerospace: join down" "alt-ctrl-shift-j"
+                "aerospace: join up" "alt-ctrl-shift-k"
+                "aerospace: join right" "alt-ctrl-shift-l"
+                // aerospace: resize
+                "aerospace: resize -50" "alt-shift-minus"
+                "aerospace: resize +50" "alt-shift-equal"
+                // aerospace: apps
+                "aerospace: Ghostty" "alt-t"
+                "aerospace: Arc" "alt-a"
+                "aerospace: Obsidian" "alt-o"
+                "aerospace: Chrome" "alt-c"
+                "aerospace: VSCode" "alt-v"
+                // aerospace: modes
+                "aerospace: service mode" "alt-shift-s"
+                "aerospace: apps mode" "alt-shift-a"
+                // aerospace: service mode
+                "aerospace: [svc] reset layout" "r"
+                "aerospace: [svc] toggle float" "f"
+                "aerospace: [svc] close others" "backspace"
+                "aerospace: [svc] exit" "esc"
+                // git: basics
+                "git: push branch" "git push -u origin <branch>"
+                "git: checkout commit" "git checkout <hash>"
+                "git: branch from commit" "git branch -b <new> <hash>"
+                "git: reset soft" "git reset --soft <hash>"
+                "git: reset hard" "git reset --hard <hash>"
+                "git: reset HEAD~1" "git reset --hard HEAD~1"
+                "git: revert commit" "git revert <hash>"
+                // git: branches
+                "git: delete local branch" "git branch -D <branch>"
+                "git: delete remote branch" "git push origin --delete <branch>"
+                "git: rename branch" "git branch -m <new>"
+                "git: track remote" "git checkout --track origin/<branch>"
+                // git: stash
+                "git: stash" "git stash push -m 'msg'"
+                "git: stash untracked" "git stash push -u"
+                "git: stash list" "git stash list"
+                "git: stash show" "git stash show -p"
+                "git: stash pop" "git stash pop"
+                "git: stash apply" "git stash apply stash@{n}"
+                "git: stash drop" "git stash drop stash@{n}"
+                // git: remote
+                "git: set remote url" "git remote set-url origin <url>"
+                "git: show origin" "git remote show origin"
+                "git: fetch prune" "git fetch --prune"
+                "git: list remotes" "git remote -v"
+                "git: all branches" "git branch -a"
+                // git: diff & misc
+                "git: diff branches" "git diff --color-words b1 b2"
+                "git: drop unstaged" "git checkout -- ."
+                "git: unstage file" "git restore --staged <file>"
+                "git: clean from remote" "git fetch && git reset --hard origin/<b> && git clean -fd"
+                "git: log tree" "git log --graph --oneline --decorate"
+                "git: pull rebase" "git pull --rebase"
+                // git: shortcuts (oh-my-zsh)
+                "git: gaa" "git add --all"
+                "git: gcb" "git checkout -b"
+                "git: gcmsg" "git commit -m"
+                "git: gst" "git status"
+                "git: gp/gl" "git push / git pull"
+                "git: gsta/gstp" "git stash / stash pop"
+                // gh: github cli
+                "gh: create repo" "gh repo create"
+                // lazydocker: navigation
+                "lazydocker: focus panel" "Enter"
+                "lazydocker: switch panels" "Tab"
+                "lazydocker: filter" "/"
+                "lazydocker: prev/next tab" "[ / ]"
+                "lazydocker: screen mode" "+ / _"
+                // lazydocker: container
+                "lazydocker: stop" "s"
+                "lazydocker: restart" "r"
+                "lazydocker: start" "S"
+                "lazydocker: pause" "p"
+                "lazydocker: attach" "a"
+                "lazydocker: logs" "m"
+                "lazydocker: shell" "E"
+                "lazydocker: remove" "d"
+                // lazydocker: compose
+                "lazydocker: up service" "u"
+                "lazydocker: up project" "U"
+                "lazydocker: down project" "D"
+                "lazydocker: open browser" "w"
+                // yazi: navigation
+                "yazi: top/bottom" "gg / G"
+                "yazi: zoxide jump" "z"
+                "yazi: fzf jump" "Z"
+                // yazi: selection
+                "yazi: toggle select" "space"
+                "yazi: visual mode" "v / V"
+                "yazi: select all" "Ctrl+a"
+                "yazi: inverse select" "Ctrl+r"
+                // yazi: file ops
+                "yazi: open" "o / Enter"
+                "yazi: copy" "y"
+                "yazi: cut" "x"
+                "yazi: paste" "p / P (overwrite)"
+                "yazi: trash" "d"
+                "yazi: delete" "D"
+                "yazi: create file/dir" "a (/ for dir)"
+                "yazi: rename" "r"
+                "yazi: toggle hidden" "."
+                // yazi: copy paths
+                "yazi: copy path" "c c"
+                "yazi: copy dir path" "c d"
+                "yazi: copy filename" "c f"
+                // yazi: search
+                "yazi: filter" "f"
+                "yazi: find next/prev" "/ / ?"
+                "yazi: search name (fd)" "s"
+                "yazi: search content (rg)" "S"
+                // yazi: tabs
+                "yazi: new tab" "t"
+                "yazi: switch tab" "1-9"
+                "yazi: prev/next tab" "[ / ]"
+                "yazi: close tab" "Ctrl+c"
+                // yazi: goto
+                "yazi: goto home" "g h"
+                "yazi: goto .config" "g c"
+                "yazi: goto downloads" "g d"
+                // nvim: modes
+                "nvim: insert before/after" "i / a"
+                "nvim: insert line start/end" "I / A"
+                "nvim: new line below/above" "o / O"
+                "nvim: visual mode" "v / V / Ctrl+v"
+                // nvim: commands
+                "nvim: save" ":w"
+                "nvim: quit" ":q / :q! / :qa!"
+                "nvim: save & quit" ":wq"
+                "nvim: goto line" ":#"
+                "nvim: split v/h" ":vsp / :sp"
+                // nvim: operators
+                "nvim: yank line" "yy"
+                "nvim: yank word" "yw"
+                "nvim: paste" "p / P"
+                "nvim: delete line" "dd"
+                "nvim: delete word" "dw / db / de"
+                "nvim: delete to EOL" "D"
+                "nvim: undo/redo" "u / Ctrl+r"
+                "nvim: replace char" "r / R"
+                "nvim: change word/EOL" "ce / c$"
+                // nvim: navigation
+                "nvim: word fwd/back" "w / b"
+                "nvim: file start/end" "gg / G"
+                "nvim: page down/up" "Ctrl+d / Ctrl+u"
+                "nvim: line start/end" "0 / $"
+                "nvim: find char" "f<c> / F<c>"
+                "nvim: next/prev found" "; / ,"
+                "nvim: jump match paren" "%"
+                // nvim: search
+                "nvim: search fwd/back" "/<term> / ?<term>"
+                "nvim: next/prev match" "n / N"
+                "nvim: clear highlight" ":noh"
+                "nvim: substitute" ":%s/old/new/g"
+                "nvim: sub with confirm" ":%s/old/new/gc"
+                // nvim: nvchad
+                "nvim: theme" "Space th"
+                "nvim: find files" "Space ff"
+                "nvim: find buffers" "Space fb"
+                "nvim: find text" "Space ft"
+                "nvim: cheatsheet" "Space ch"
+                "nvim: file tree" "Ctrl+n"
+                "nvim: split v/h" "Space v / Space h"
+                // nvim: lsp
+                "nvim: lsp info" ":LspInfo"
+                "nvim: lsp restart" ":LspRestart"
+                "nvim: mason" ":Mason"
+            }
+        }
     }
     shared_except "locked" "renametab" "renamepane" {
         bind "Ctrl q" { Quit; }
