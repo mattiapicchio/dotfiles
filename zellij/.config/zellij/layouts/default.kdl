@@ -1,0 +1,57 @@
+layout {
+    default_tab_template {
+        children
+        pane size=2 borderless=true {
+            plugin location="zjstatus" {
+                format_left   "{mode} {tabs}"
+                format_center ""
+                format_right  "{pipe_zjstatus_hints}"
+                format_space  ""
+
+                border_enabled  "false"
+                hide_frame_for_single_pane "true"
+
+                // Catppuccin Mocha colors
+                color_bg      "#1e1e2e"
+                color_fg      "#cdd6f4"
+                color_green   "#a6e3a1"
+                color_blue    "#89b4fa"
+                color_purple  "#cba6f7"
+                color_pink    "#f5c2e7"
+                color_red     "#f38ba8"
+                color_yellow  "#f9e2af"
+                color_orange  "#fab387"
+                color_peach   "#fab387"
+                color_gray    "#6c7086"
+                color_dark    "#1e1e2e"
+
+                // Mode indicators with pill shapes
+                mode_normal        "#[bg=$green,fg=$dark,bold]  NORMAL #[bg=$bg,fg=$green]"
+                mode_locked        "#[bg=$gray,fg=$dark,bold]  LOCKED #[bg=$bg,fg=$gray]"
+                mode_pane          "#[bg=$blue,fg=$dark,bold]  PANE #[bg=$bg,fg=$blue]"
+                mode_tab           "#[bg=$purple,fg=$dark,bold]  TAB #[bg=$bg,fg=$purple]"
+                mode_resize        "#[bg=$red,fg=$dark,bold]  RESIZE #[bg=$bg,fg=$red]"
+                mode_move          "#[bg=$pink,fg=$dark,bold]  MOVE #[bg=$bg,fg=$pink]"
+                mode_scroll        "#[bg=$yellow,fg=$dark,bold]  SCROLL #[bg=$bg,fg=$yellow]"
+                mode_search        "#[bg=$yellow,fg=$dark,bold]  SEARCH #[bg=$bg,fg=$yellow]"
+                mode_enter_search  "#[bg=$yellow,fg=$dark,bold]  SEARCH #[bg=$bg,fg=$yellow]"
+                mode_session       "#[bg=$orange,fg=$dark,bold]  SESSION #[bg=$bg,fg=$orange]"
+                mode_rename_tab    "#[bg=$purple,fg=$dark,bold]  RENAME #[bg=$bg,fg=$purple]"
+                mode_rename_pane   "#[bg=$blue,fg=$dark,bold]  RENAME #[bg=$bg,fg=$blue]"
+                mode_prompt        "#[bg=$blue,fg=$dark,bold]  PROMPT #[bg=$bg,fg=$blue]"
+                mode_tmux          "#[bg=$peach,fg=$dark,bold]  TMUX #[bg=$bg,fg=$peach]"
+
+                // Tab styling with pill shapes
+                tab_normal              "#[bg=$bg,fg=$gray]#[bg=$gray,fg=$dark] {index} #[bg=$bg,fg=$gray] {name} "
+                tab_normal_fullscreen   "#[bg=$bg,fg=$gray]#[bg=$gray,fg=$dark] {index} #[bg=$bg,fg=$gray] {name}  "
+                tab_normal_sync         "#[bg=$bg,fg=$gray]#[bg=$gray,fg=$dark] {index} #[bg=$bg,fg=$gray] {name}  "
+                tab_active              "#[bg=$bg,fg=$blue]#[bg=$blue,fg=$dark,bold] {index} #[bg=$bg,fg=$blue] {name} "
+                tab_active_fullscreen   "#[bg=$bg,fg=$blue]#[bg=$blue,fg=$dark,bold] {index} #[bg=$bg,fg=$blue] {name}  "
+                tab_active_sync         "#[bg=$bg,fg=$blue]#[bg=$blue,fg=$dark,bold] {index} #[bg=$bg,fg=$blue] {name}  "
+
+                // Keybinding hints
+                pipe_zjstatus_hints_format "{output}"
+            }
+        }
+    }
+}
