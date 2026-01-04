@@ -19,7 +19,7 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 accordion-padding = 20
 
 # Possible values: tiles|accordion
-default-root-container-layout = 'tiles'
+default-root-container-layout = 'accordion'
 
 # Possible values: horizontal|vertical|auto
 # 'auto' means: wide monitor (anything wider than high) gets horizontal orientation,
@@ -37,7 +37,7 @@ on-focus-changed = 'move-mouse window-lazy-center'
 # You can effectively turn off macOS "Hide application" (cmd-h) feature by toggling this flag
 # Useful if you don't use this macOS feature, but accidentally hit cmd-h or cmd-alt-h key
 # Also see: https://nikitabobko.github.io/AeroSpace/goodness#disable-hide-app
-automatically-unhide-macos-hidden-apps = false
+automatically-unhide-macos-hidden-apps = true
 
 # [[on-window-detected]]
 # if.app-id = 'com.apple.systempreferences'
@@ -54,6 +54,10 @@ automatically-unhide-macos-hidden-apps = false
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'finder'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Preview'
 run = 'layout floating'
 
 [[on-window-detected]]
@@ -83,6 +87,22 @@ run = 'layout floating'
 [[on-window-detected]]
 if.app-name-regex-substring = 'Simulator'
 run = 'layout tiling'
+
+[[on-window-detected]]
+if.app-id = "com.mitchellh.ghostty"
+run = "move-node-to-workspace 1"
+
+[[on-window-detected]]
+if.app-id = "app.zen-browser.zen"
+run = "move-node-to-workspace 2"
+
+[[on-window-detected]]
+if.app-id = "com.google.Chrome"
+run = "move-node-to-workspace 2"
+
+[[on-window-detected]]
+if.app-id = "com.microsoft.VSCodeInsiders"
+run = "move-node-to-workspace 3"
 
 # Move apps directly to a workspace
 # Use 'aerospace list-apps' to get the app-id
@@ -216,11 +236,11 @@ alt-shift-q = 'move-workspace-to-monitor --wrap-around next'
 alt-shift-s = 'mode service'
 alt-shift-a = 'mode apps'
 
-alt-t = 'exec-and-forget open -a /Applications/Ghostty.app -n'
-# alt-a = 'exec-and-forget open -a /Applications/Arc.app'
-alt-o = 'exec-and-forget open -a /Applications/Obsidian.app'
-alt-c = 'exec-and-forget open -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222' # &
-alt-v = 'exec-and-forget open -n -a "/Applications/Visual Studio Code - Insiders.app" --args -n'
+# alt-t = 'exec-and-forget open -a /Applications/Ghostty.app -n'
+# # alt-a = 'exec-and-forget open -a /Applications/Arc.app'
+# alt-o = 'exec-and-forget open -a /Applications/Obsidian.app'
+# alt-c = 'exec-and-forget open -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222' # &
+# alt-v = 'exec-and-forget open -n -a "/Applications/Visual Studio Code - Insiders.app" --args -n'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -231,7 +251,7 @@ f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling
 backspace = ['close-all-windows-but-current', 'mode main']
 
 [mode.apps.binding]
-alt-w = ['exec-and-forget open -a /Applications/Ghostty.app', 'mode main']
+# alt-w = ['exec-and-forget open -a /Applications/Ghostty.app', 'mode main']
 esc = ['reload-config', 'mode main']
 
 

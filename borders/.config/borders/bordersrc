@@ -1,11 +1,17 @@
 #!/bin/bash
 
 options=(
-	style=round
+	style=uniform
 	width=4.0
 	hidpi=on
 	active_color=0xFF6CF401
 	inactive_color=0xFFF7C927
+	ax_focus=on
+	#blacklist=<application_list>
 )
 
 borders "${options[@]}"
+
+
+# https://github.com/FelixKratz/JankyBorders
+# https://github.com/FelixKratz/JankyBorders/wiki/Man-Page

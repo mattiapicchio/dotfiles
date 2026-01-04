@@ -2,9 +2,9 @@
 # theme = "FishTank"
 # theme = "jubi"
 #theme = "Violet Dark"
-#theme = UltraViolent
-theme = "blulocoDark"
-font-size = 15
+#theme = Ultra Violent
+theme = dark:Bluloco Dark,light:Catppuccin Latte
+font-size = 14
 font-family = JetBrainsMono Nerd Font
 # font-family = Monospace Neon
 mouse-hide-while-typing = true
@@ -19,10 +19,27 @@ background-opacity = 0.99
 macos-titlebar-style = hidden
 # macos-titlebar-style = tabs
 macos-titlebar-proxy-icon = hidden
-macos-option-as-alt = false
+macos-option-as-alt = true
 macos-non-native-fullscreen = true
 
+# Clipboard
+copy-on-select = clipboard
+clipboard-paste-protection = false
+
 # keymaps
+keybind = opt+2=text:@
+keybind = shift+enter=text:\x1b\r
+keybind = opt+4=text:$
+keybind = escape=text:\x1b
+keybind = caps_lock=text:\x1b
+keybind = opt+8=text:[
+keybind = opt+9=text:]
+keybind = shift+opt+8=text:{
+keybind = shift+opt+9=text:}
+keybind = opt+7=text:\x7c
+keybind = opt+right_bracket=text:~
+
+
 # keybind = global:cmd+`=toggle_quick_terminal
 # keybind = global:f1=toggle_quick_terminal
 # keybind = shift+ctrl+left_bracket=previous_tab
