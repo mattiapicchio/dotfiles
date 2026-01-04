@@ -473,7 +473,7 @@ load_plugins {
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-// theme "dracula"
+theme "catppuccin-mocha"
  
 // Choose the base input mode of zellij.
 // Default: normal
@@ -652,5 +652,22 @@ show_startup_tips false
  
 // Whether to show release notes on first version run
 // Default: true
-// 
+//
 // show_release_notes false
+
+// Catppuccin Mocha theme
+themes {
+    catppuccin-mocha {
+        bg "#1e1e2e"
+        fg "#cdd6f4"
+        red "#f38ba8"
+        green "#a6e3a1"
+        yellow "#f9e2af"
+        blue "#89b4fa"
+        magenta "#cba6f7"
+        cyan "#94e2d5"
+        orange "#fab387"
+        black "#181825"
+        white "#cdd6f4"
+    }
+}
