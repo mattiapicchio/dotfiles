@@ -58,11 +58,11 @@ layout {
     tab name="1_HOME" cwd="/Users/mattia.picchio" {
         pane command="fastfetch" close_on_exit=false
     }
-    tab name="2_MAIN" cwd="/Users/mattia.picchio/reps" {
+    tab name="2_MAIN" cwd="/Users/mattia.picchio/reps/PayEqualityApp" {
         pane split_direction="vertical" {
-            pane
+            pane size="40%"
             pane split_direction="horizontal" {
-                pane
+                pane size="70%" command="lazyworktree"
                 pane
             }
         }
