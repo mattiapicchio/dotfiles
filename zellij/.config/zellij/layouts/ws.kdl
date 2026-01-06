@@ -59,22 +59,49 @@ layout {
         pane
     }
     tab name="2_MAIN" cwd="/Users/mattia.picchio/reps" {
-        pane
+        pane split_direction="vertical" {
+            pane
+            pane split_direction="horizontal" {
+                pane
+                pane
+            }
+        }
     }
     tab name="3_WT1" cwd="/Users/mattia.picchio/reps/appwt" {
-        pane
+        pane split_direction="vertical" {
+            pane
+            pane split_direction="horizontal" {
+                pane
+                pane
+            }
+        }
     }
     tab name="4_WT2" cwd="/Users/mattia.picchio/reps/appwt" {
-        pane
+        pane split_direction="vertical" {
+            pane
+            pane split_direction="horizontal" {
+                pane
+                pane
+            }
+        }
     }
     tab name="5_WT3" cwd="/Users/mattia.picchio/reps/appwt" {
-        pane
+        pane split_direction="vertical" {
+            pane
+            pane split_direction="horizontal" {
+                pane
+                pane
+            }
+        }
     }
     tab name="6_Y" cwd="/Users/mattia.picchio" {
         pane command="/opt/homebrew/bin/yazi" close_on_exit=false
     }
     tab name="7_CHEATS" cwd="/Users/mattia.picchio/cheatsheets" {
-        pane
+        pane split_direction="vertical" {
+            pane
+            pane
+        }
     }
     tab name="8_TOP" cwd="/Users/mattia.picchio" {
         pane command="/opt/homebrew/bin/btop" close_on_exit=false
