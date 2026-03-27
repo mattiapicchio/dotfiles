@@ -1,8 +1,6 @@
-after-startup-command = ['exec-and-forget sketchybar']
+after-startup-command = []
 
-# Notify Sketchybar about workspace change
-exec-on-workspace-change = ['/bin/bash', '-c',
-  'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE',
+exec-on-workspace-change = [
   'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0'
 ]
 
@@ -144,7 +142,7 @@ inner.vertical =   12
 outer.left =       6
 outer.bottom =     6
 outer.top =        6
-outer.right =      70
+outer.right =      6
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
