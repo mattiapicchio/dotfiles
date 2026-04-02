@@ -165,7 +165,7 @@ keybinds clear-defaults=true {
                 quick_jump true
             }
         }
-        bind "Alt f" {
+        bind "Alt ö" {
             LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij_forgot.wasm" {
                 floating true
                 "LOAD_ZELLIJ_BINDINGS" "false"
