@@ -20,6 +20,7 @@ alias gstd="git stash drop"
 alias gunt="git stash save --include-untracked -m ''"
 alias gdiff="git diff HEAD"
 alias vdiff="git difftool HEAD"
+alias gbcur="git branch --show-current"
 
 # System Aliases
 alias ls="eza --icons=always --all"
@@ -40,21 +41,16 @@ alias st="speedtest"
 alias vim="nvim"
 alias nv="nvim"
 alias pes="pnpm exec eslint"
-alias gc="gh copilot"
-alias gcsg="gh copilot suggest"
-alias gcex="gh copilot explain"
-alias ..="cd .."
 alias x="exit"
-alias codi="code-insiders ."
+alias cod="code-insiders ."
 alias cat="bat"
-alias gw="glow"
 alias gw="glow"
 alias sleep="pmset sleepnow"
 alias lama="ollama"
 alias irc="irrsi"
 alias pathtab="echo $PATH | tr ':' '\n'"
 alias bindlist="ifconfig | grep -A 2 utun"
-
+alias k3000="lsof -ti :3000 | xargs kill"
 
 # btop - htop
 # ncdu
@@ -84,6 +80,10 @@ alias ch="curl cht.sh/"
 
 # Lazy Docker
 alias lzd="lazydocker"
+# Lazy Git
+alias lzg="lazygit"
+# Lazy Worktree
+alias lzw="lazyworktree"
 
 # Aliases for common dirs
 alias home="cd ~"
@@ -106,14 +106,24 @@ alias tmux_reload="tmux source-file ~/.config/tmux/tmux.conf"
 alias tmux_restart="tmux kill-server && tmux || tmux"
 alias tmn="tmux new -s"
 
-# FVM
-alias fvf="fvm flutter"
-alias fvd="fvm dart"
-
-# XCODE VERSIONS
-alias use-xcode-154='sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer'
-alias use-xcode-162='sudo xcode-select --switch /Applications/Xcode16.2.app/Contents/Developer'
-
 # Unlighthouse
 alias unl="npx unlighthouse --site "
 
+# Aliases for common dirs
+alias home="cd ~"
+alias rp="~/."
+# cd aliases 
+alias .="pwd"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# Zellij
+alias zj="zellij"
+alias zjw="zellij --layout ws"
+
+# Claude
+alias cld="claude"
+alias cldc="claude --continue"
+alias cldyolo="claude --dangerously-skip-permissions"
