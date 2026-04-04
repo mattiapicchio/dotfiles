@@ -50,13 +50,6 @@ automatically-unhide-macos-hidden-apps = true
 # if.app-name-regex-substring = 'iTerm'
 # run = 'layout floating'
 
-[[on-window-detected]]
-if.app-name-regex-substring = 'finder'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-name-regex-substring = 'Preview'
-run = 'layout floating'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'NordVPN'
@@ -80,6 +73,10 @@ run = 'layout floating'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'OBSBOT_WebCam'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Pomotroid'
 run = 'layout floating'
 
 [[on-window-detected]]
