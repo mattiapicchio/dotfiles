@@ -58,16 +58,6 @@ alias k3000="lsof -ti :3000 | xargs kill"
 # https://github.com/yt-dlp/yt-dlp
 # hyperfine https://github.com/sharkdp/hyperfine
 
-# Deepseek
-# Reasoning model
-alias dsr="ollama run deepseek-r1:14b" 
-# Mixture of Experts
-alias ds="ollama run deepseek-v2:16b" 
-# Coder
-# https://ollama.com/library/deepseek-coder:33b
-alias dsc="ollama run deepseek-coder-v2:16b" 
-
-
 # GHOSTTY
 alias ghosty="ghostty"
 alias gtheme="ghostty +list-themes"
@@ -127,3 +117,6 @@ alias zjw="zellij --layout ws"
 alias cld="claude"
 alias cldc="claude --continue"
 alias cldyolo="claude --dangerously-skip-permissions"
+
+#Ollama
+alias gemma="brew services start ollama && ollama run gemma4:31b-it-q4_K_M"
