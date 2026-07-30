@@ -1,1 +1,33 @@
 onboarding = false
+
+[keys]
+prefix = "alt+z"
+last_pane = "prefix+t"
+previous_agent = "prefix+a"
+next_agent = "prefix+d"
+goto = "prefix+g"
+
+[[keys.command]]
+key = "prefix+f"
+type = "plugin_action"
+command = "herdr-file-viewer.open-file-viewer"
+
+[[keys.command]]
+key = "prefix+shift+f"
+type = "plugin_action"
+command = "herdr-file-viewer.open-file-viewer-tab"
+
+[ui]
+accent = "#FFD300"
+
+show_agent_labels_on_pane_borders = false
+[theme]
+name = "one-dark"
+auto_switch = false
+
+[ui.toast]
+delivery = "terminal"
+
+[experimental]
+switch_ascii_input_source_in_prefix = true
+kitty_graphics = true
