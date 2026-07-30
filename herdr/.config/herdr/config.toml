@@ -17,6 +17,12 @@ key = "prefix+shift+f"
 type = "plugin_action"
 command = "herdr-file-viewer.open-file-viewer-tab"
 
+[[keys.command]]
+key = "prefix+u"
+type = "shell"
+description = "open localhost url from this pane in herdr browser"
+command = 'u=$("${HERDR_BIN_PATH}" pane read "$HERDR_ACTIVE_PANE_ID" --format text --lines 300 | grep -oE "https?://(localhost|127\.0\.0\.1)(:[0-9]+)?[^[:space:]]*" | tail -1); [ -n "$u" ] && "${HERDR_BIN_PATH}" plugin pane open --plugin official.browser --entrypoint browser --placement split --direction right --focus --env HERDR_BROWSER_INITIAL_URL="$u"'
+
 [ui]
 accent = "#FFD300"
 

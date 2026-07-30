@@ -42,6 +42,11 @@ keybind = shift+opt+9=text:}
 keybind = opt+7=text:\x7c
 keybind = opt+right_bracket=text:~
 
+# rebind ghostty's own terminal inspector off cmd+opt+i (was firing instead of
+# expecting a browser devtools shortcut that herdr-browser doesn't implement)
+keybind = super+alt+i=unbind
+keybind = super+alt+j=inspector:toggle
+
 
 # keybind = global:cmd+`=toggle_quick_terminal
 # keybind = global:f1=toggle_quick_terminal
