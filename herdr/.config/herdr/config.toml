@@ -3,8 +3,8 @@ onboarding = false
 [keys]
 prefix = "alt+z"
 last_pane = "prefix+t"
-previous_agent = "prefix+a"
-next_agent = "prefix+d"
+previous_agent = "alt+shift+up"
+next_agent = "alt+shift+down"
 goto = "prefix+g"
 
 [[keys.command]]
