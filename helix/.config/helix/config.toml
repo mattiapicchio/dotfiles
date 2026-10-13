@@ -1,0 +1,7 @@
+theme = "termmatch"
+
+[editor]
+true-color = true
+
+[editor.soft-wrap]
+enable = true
