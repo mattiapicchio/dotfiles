@@ -1,11 +1,12 @@
 # theme = "Monokai Pro Octagon"
 # theme = "jubi"
 # theme = "Violet Dark"
-#theme = Ultra Violent
-theme = dark:Bluloco Dark,light:Catppuccin Latte
+# theme = Ultra Violent
+# theme = dark:Bluloco Dark,light:Catppuccin Latte
 # theme = dark:Catppuccin Macchiato,light:Catppuccin Latte
 # theme = dark:Monokai Pro Octagon,light:Box
 # theme = Box
+theme = Aurora
 font-size = 14
 font-family = Victor Mono
 # font-family = JetBrainsMono Nerd Font
