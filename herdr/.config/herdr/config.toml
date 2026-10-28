@@ -6,6 +6,7 @@ last_pane = "prefix+t"
 previous_agent = "alt+shift+up"
 next_agent = "alt+shift+down"
 goto = "prefix+g"
+new_tab = ["prefix+c", "ctrl+alt+t"]
 
 [[keys.command]]
 key = "prefix+f"
@@ -25,6 +26,8 @@ command = 'u=$("${HERDR_BIN_PATH}" pane read "$HERDR_ACTIVE_PANE_ID" --format te
 
 [ui]
 accent = "#FFD300"
+sidebar_width = 34
+sidebar_max_width = 44
 
 show_agent_labels_on_pane_borders = false
 pane_borders = "always"
@@ -45,4 +48,4 @@ switch_ascii_input_source_in_prefix = true
 kitty_graphics = true
 
 [ui.sound]
-enabled = false
+enabled = true
